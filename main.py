@@ -37,14 +37,14 @@ def exel_cleaner():
 
 
 schedule.every().day.at("00:00").do(exel_cleaner)
-schedule.every().day.at("00:05").do(exel_cleaner)
-schedule.every().day.at("00:06").do(exel_cleaner)
-schedule.every().day.at("00:07").do(exel_cleaner)
-schedule.every().day.at("00:09").do(exel_cleaner)
-schedule.every().day.at("00:11").do(exel_cleaner)
-schedule.every().day.at("00:12").do(exel_cleaner)
-schedule.every().day.at("00:10").do(exel_cleaner)
-schedule.every().day.at("00:04").do(exel_cleaner)
+schedule.every().day.at("00:15").do(exel_cleaner)
+schedule.every().day.at("00:16").do(exel_cleaner)
+schedule.every().day.at("00:17").do(exel_cleaner)
+schedule.every().day.at("00:18").do(exel_cleaner)
+schedule.every().day.at("00:19").do(exel_cleaner)
+schedule.every().day.at("00:20").do(exel_cleaner)
+schedule.every().day.at("00:21").do(exel_cleaner)
+schedule.every().day.at("00:22").do(exel_cleaner)
 
 while True:
     schedule.run_pending()
