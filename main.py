@@ -38,7 +38,7 @@ def exel_cleaner():
 
 schedule.every().day.at("00:00").do(exel_cleaner)
 schedule.every().day.at("00:30").do(exel_cleaner)
-schedule.every().day.at("00:31")do(exel_cleaner)
+schedule.every().day.at("00:31").do(exel_cleaner)
 schedule.every().day.at("00:32").do(exel_cleaner)
 schedule.every().day.at("00:33").do(exel_cleaner)
 schedule.every().day.at("00:34").do(exel_cleaner)
