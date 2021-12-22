@@ -37,10 +37,9 @@ def exel_cleaner():
 
 
 schedule.every().day.at("00:00").do(exel_cleaner)
-schedule.every().day.at("16:00").do(exel_cleaner)
 
-x = 1
+
 while True:
     schedule.run_pending()
     time.sleep(1)
-    x += 1
+
