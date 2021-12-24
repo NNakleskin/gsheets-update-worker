@@ -36,7 +36,8 @@ def exel_cleaner():
         sheet.update_cell(n, 3, '')
 
 
-schedule.every().day.at("00:00").do(exel_cleaner)
+schedule.every().day.at("21:00").do(exel_cleaner)
+
 
 
 while True:
