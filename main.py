@@ -26,9 +26,9 @@ get_data3 = sheet.cell(2, 2).value
 
 
 def exel_cleaner():
-    for n in range(1, 3):
+    for n in range(2):
         x = n
-        a = date.today() + datetime.timedelta(days=n)
+        a = date.today() + datetime.timedelta(days=n+1)
         sheet.update_cell(1, x + 2, str(a))
     for n in range(2, 10):
         sheet.update_cell(n, 2, '')
