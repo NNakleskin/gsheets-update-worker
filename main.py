@@ -12,11 +12,11 @@ q = Queue(connection=Redis())
 
 link = ['https://spreadsheets.google.com/feeds',
         'https://www.googleapis.com/auth/drive']  # Задаем ссылку на Гугл таблици
-my_creds = ServiceAccountCredentials.from_json_keyfile_name('goluboe.json',
+my_creds = ServiceAccountCredentials.from_json_keyfile_name('FILENAME.json',
                                                             link)  # Формируем данные для входа из нашего json файла
 
 client = gspread.authorize(my_creds)  # Запускаем клиент для связи с таблицами
-sheet = client.open('Goluboe').sheet1  # Открываем нужную на таблицу и лист
+sheet = client.open('SHEET').sheet1  # Открываем нужную на таблицу и лист
 printf = pprint.PrettyPrinter()  # Описываем прити принт
 
 get_data = sheet.get_all_records()  # Получаем все данные из таблици
@@ -36,7 +36,7 @@ def exel_cleaner():
         sheet.update_cell(n, 3, '')
 
 
-schedule.every().day.at("21:00").do(exel_cleaner)
+schedule.every().day.at("00:51").do(exel_cleaner)
 
 
 while True:
